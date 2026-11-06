@@ -154,7 +154,7 @@ func copyCodeFor(name string) {
 		return
 	}
 	if err := clipboard.Copy(res.Code); err != nil {
-		notify(fmt.Sprintf("totp: %s — clipboard error", name))
+		notify(fmt.Sprintf("Copy failed for %s — code: %s", name, res.Code))
 		return
 	}
 	notify("Copied code for " + name)

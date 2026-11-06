@@ -109,7 +109,9 @@ Behaviour:
   there. If you have copied something else in the meantime, that is left
   alone.
 - **macOS notification.** Each copy / error pops a short "Copied code for
-  &lt;name&gt;" / error notification via `osascript`.
+  &lt;name&gt;" / error notification via `osascript`. If copying to the
+  clipboard fails, the notification shows the code itself as a fallback so
+  you can still type it (and it remains in Notification Center history).
 - **Auto-refresh.** The menu re-reads the keychain account list every
   ~45s, and immediately via **Refresh accounts**, so newly added secrets
   appear without restarting.
